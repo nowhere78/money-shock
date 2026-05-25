@@ -4,6 +4,11 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>💸 생활비 충격계산기 — 당신의 소비를 직면하라</title>
+<!-- PWA Setup -->
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#8b5cf6">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
 <meta name="description" content="매일 쓰는 커피·담배·배달·구독비가 10년이면 얼마? 충격적인 진실을 확인하세요."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet"/>
@@ -397,6 +402,13 @@ footer span{font-size:11px;opacity:.6;display:block;margin-top:3px}
   .freq-sel{width:100%}
 }
 </style>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js');
+    });
+  }
+</script>
 </head>
 <body>
 

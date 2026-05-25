@@ -1,0 +1,27 @@
+{
+  "name": "생활비 충격계산기",
+  "short_name": "충격계산기",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07070f",
+  "theme_color": "#8b5cf6",
+  "description": "매일 쓰는 커피, 담배, 배달, 구독비가 10년 뒤에 얼마? 나의 소비를 직면하고 분석해주는 충격계산기",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
